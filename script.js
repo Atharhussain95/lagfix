@@ -673,37 +673,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
     
-    
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.from("#page10 h4, #page10 h1, #page10 #about-us", {
-    opacity: 0,
-    delay: 0.5, // Adjust this value to increase or decrease the delay
-    scrollTrigger: {
-      trigger: "#page10",
-      start: "top 70%", // When the top of #page10 hits 70% from the top of the viewport
-      end: "top 30%", // Optional: Specify an end point if needed
-      scrub: true // Optional: Add scrub for smooth scrubbing effect
-    },
-    stagger: {
-      amount: 0.8
-    },
-    y: 20
-  });
-
-
-function page11Anim(){
-  const videos = document.querySelectorAll('.page11 .page11-video .item video');
-
-videos.forEach((video) => {
-  video.addEventListener('mouseenter',() =>{
-    video.play()
-  })
-  video.addEventListener('mouseleave',() =>{
-    video.pause()
-    video.currentTime= 0
-  })
-})
-}
-
-page11Anim()
+ 
